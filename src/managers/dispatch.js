@@ -5,7 +5,7 @@ module.exports = makeEventsDispatcher;
 /**
  * Returns an event dispatcher.
  * @param configRepository An object that provides a `get` method to get the 'defaultHandler'`
- * @param eventsRepository An object that provides a `handlers` method to retrieve all handlrs registered for an event
+ * @param eventsRepository An object that provides a `handlers` method to retrieve all handlers registered for an event
  * @returns {{queuedHandlers: {}, dispatch: (function(*=, *=)), queueHandlers: (function(*=, *=)), dequeueHandlers: (function(*))}}
  */
 function makeEventsDispatcher(configRepository, eventsRepository) {
